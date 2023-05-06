@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>What she is?</title>
+	<style type="text/css" media="all">
+	* {
+		margin: 0;
+		padding: 0;
+	}
+	
+		body {
+			height: 100vh;
+			width: 100vw;
+			background-image: linear-gradient(#8c58af, #ac3fc5);
+			background-repeat: no-repeat;
+			color: white;
+			font-family: Arial;
+			text-align: center;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		
+		.container {
+			background-color: #e6e6e6;
+			color: #5c128c;
+			border: 2px solid #5c128c;
+			border-radius: 15px;
+			width: 280px;
+		
+		}
+		
+		h1 {
+			margin: 10px 0 5px 0;
+			
+		}
+		
+		.small-txt {
+			margin-top: 5px;
+			font-size: 12px;
+		}
+		
+		input {
+			width: 140px;
+			padding: 7px;
+			margin: 20px 5px 10px 0;
+			border: none;
+			outline: none;
+			border: 2px solid #5c128c;
+			border-radius: 10px;
+		}
+		
+		button {
+			padding: 7px;
+			background-color: #fff;
+			color: black;
+			border: 2px solid #75128c;
+			border-radius: 10px;
+		}
+		
+		#res {
+			margin-bottom: 10px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+	<h1>O que Pamela é?</h1>
+	<hr />
+	<p class="small-txt">Escreva um xingamento na caixinha abaixo</p>
+	<input type="text" name="send" id="send" placeholder="Digite aqui"/>
+	<button id="enviar" onclick="clicar()">Enviar</button>
+	<div id="res"> </div>
+	</div>
+	<script type="text/javascript" charset="utf-8">
+		function clicar() {
+			let input = document.getElementById('send')
+			let enviar = document.getElementById('enviar')
+			let resultado = document.getElementById('res')
+			let conteudo = input.value
+			
+			res.innerHTML = `<strong>Pamela é ${conteudo}</strong>`
+		}
+	</script>
+</body>
+</html>
